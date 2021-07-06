@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LordDex - Pókedex</title>
+    <link rel="stylesheet" href="pace-theme-minimal.tmpl.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="//db.onlinewebfonts.com/c/1f7cc3986271f87fcfbce4fadda6f2e5?family=FlexoW01-Thin" rel="stylesheet"
+        type="text/css" />
+    <link rel="shortcut icon" href="./img/download.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Header / Nav  -->
+    <header class="header">
+        <nav class="nav">
+            <a href="http://127.0.0.1:5501/index.html">
+                <img class="logo" src="./img/download.png">
+            </a>
+        </nav>
+    </header>
+    <!-- Container with all important to run -->
+    <div class="container">
+        <div class="background">
+            <div class="pokename">
+                <!-- Pókemon Image -->
+                <div class="block">
+                    <!-- Pókemon ID Display -->
+                    <div class="pokeid" id="pokeid">
+                        <h1>1</h1>
+                    </div>
+                    <!-- Refresh page Area -->
+                    <input class="refresh" id="refresh" type="button" value="Refresh"
+                        onclick="window.location.href=window.location.href">
+                    <img id="poke1" class="poke1" onmouseover="PokemonImgZoomIn()" onmouseout="PokemonImgZoomOut()"
+                        src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png">
+                    <!-- Pókemon Name -->
+                    <div class="name">
+                        <p id="name">Bulbasaur</p>
+                    </div>
+                    <!-- Next Button -->
+                    <div class="button">
+                        <div class="next1">
+                            <input onmousedown="next();load();number()" onmouseup="reset()" class="inputnext"
+                                id="inputnext" type="button" value="Next">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Search Box -->
+            <div class="search">
+                <input type="text" id="search" placeholder="Search Pókemon name" onkeypress="search(this.value)">
+                <div class="invisivel"></div>
+                <img id="pokeball" class="pokeball fa-spin" src="./img/pokeball_white.png">
+                <!-- Description and weakness -->
+                <div class="description">
+                    <h3>Main Type</h3>
+                    <div id="type" class="type" onmouseover="ZoomIn()" onmouseout="ZoomUp()">Grass</div>
+                    <h3>weakness</h3>
+                    <div id="type1" class="type1" onmouseover="ZoomIn1()" onmouseout="ZoomUp1()">Fire</div>
+                    <h3>weakness 2</h3>
+                    <div id="type2" class="type2" onmouseover="ZoomIn2()" onmouseout="ZoomUp2()">Psychic</div>
+                </div>
+                <div class="description2">
+                    <h2 id="pokedesc" class="pokedesc">There is a plant seed on its back right from <br> the day this
+                        Pokémon
+                        is born.<br>The seed slowly grows larger</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <script src="pace.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/d1de80c18d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

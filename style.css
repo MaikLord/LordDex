@@ -1,0 +1,418 @@
+@import url(//db.onlinewebfonts.com/c/1f7cc3986271f87fcfbce4fadda6f2e5?family=FlexoW01-Thin);
+@font-face {font-family: "FlexoW01-Thin"; src: url("//db.onlinewebfonts.com/t/1f7cc3986271f87fcfbce4fadda6f2e5.eot"); src: url("//db.onlinewebfonts.com/t/1f7cc3986271f87fcfbce4fadda6f2e5.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1f7cc3986271f87fcfbce4fadda6f2e5.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1f7cc3986271f87fcfbce4fadda6f2e5.woff") format("woff"), url("//db.onlinewebfonts.com/t/1f7cc3986271f87fcfbce4fadda6f2e5.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1f7cc3986271f87fcfbce4fadda6f2e5.svg#FlexoW01-Thin") format("svg"); }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'FlexoW01-Thin';
+    letter-spacing: 2px;
+}
+
+body {
+    background-image: url(./img/25th_gray-8cafe8de4009ac8136df20fdf02bee2a.gif);
+}
+.header {
+    display: flex;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(65,65,65);
+    border-bottom: 5px solid tomato;
+    justify-content: center;
+    z-index: 9999;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    width: 60px;
+}
+.pokeball {
+    display: block;
+    margin-left: -35px;
+    width: 30px;
+    visibility: hidden;
+}
+.background {
+    display: flex;
+    background: rgba( 65, 65, 65, 0.50);
+    box-shadow: 0 8px 32px 0 rgba( 65, 65, 65, 0.3 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 20.0px );
+    border-radius: 20px;
+    max-width: 90vw;
+    min-height: 80vh;
+    margin-left: 5vw;
+    margin-top: 15px;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(65,65,65);
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 20px;
+    height: 81.5%;
+}
+.poke1 {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 3px solid rgb(255, 100, 70);
+    border-radius: 20px; 
+}
+.poke1:hover {
+    background-color: rgb(62,62,62);
+    cursor: pointer;
+    border: 3px solid rgb(255, 87, 57);
+    transition: 0.1s;
+}
+.name {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 18pt;
+}
+.next1 {
+    display: flex;
+    justify-content: center;
+}
+
+.next1 input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(40, 200, 80);
+    width: 60%;
+    height: 80px;
+    font-size: 18pt;
+    font-style: italic;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 5px solid white;
+    cursor: pointer;
+    transition: 0.2s;
+    transform: scale();
+}
+.next1 input:active {
+    color: rgb(59, 59, 59);
+}
+.next1 input:hover {
+    border: 5px solid rgb(168, 168, 168);
+}
+.pokeid {
+    position: absolute;
+    font-size: 16pt;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(50,50,50);
+    border: 3px solid tomato;
+    color: white;
+    width: 50px;
+    border-radius: 10px;
+    cursor: auto;
+    margin-left: 190px;
+    top: 65px;
+}
+#pokeid  h1 {
+    font-size: 16pt;
+    cursor: auto;
+}
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(65,65,65);
+    margin: 50px 50px 0px 50px;
+    width: 80%;
+    height: 415px;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+@media (max-width: 768px) and (min-width: 320px) {
+    .background {
+        display: flex;
+        background: rgba( 65, 65, 65, 0.50);
+        box-shadow: 0 8px 32px 0 rgba( 65, 65, 65, 0.3 );
+        backdrop-filter: blur( 2px );
+        -webkit-backdrop-filter: blur( 20.0px );
+        border-radius: 20px;
+        max-width: 90vw;
+        min-height: 130vh;
+        height: 1200px;
+        margin-left: 5vw;
+        margin-top: 15px;
+        justify-content: center;
+    }
+    .block {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(65,65,65);
+        margin: auto;
+        margin-left: auto;
+        margin-top: 50px;
+        border-radius: 20px;
+        height: 400px;
+    }
+    .next1 {
+        margin-bottom: 50px;
+    }
+    .iconsrc {
+        visibility: hidden;
+        position: absolute;
+    }
+    .search {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        flex-direction: column;
+        left: 40px;
+        margin-top: 500px;
+        justify-content: center;
+        height: 650px;
+    }
+    .pokeball {
+        visibility: visible;
+        position: absolute;
+        margin-top: -550px;
+        margin-left: 15px;
+        top: 0;
+    }
+    .search input {
+        display: flex;
+        position: absolute;
+        width: auto;
+        height: 27px;
+    }
+    .search input[type=text] {
+        width: 300px;
+    }
+    .background {
+        min-height: 130vh;
+        margin-bottom: 20px;
+    }
+    .description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 8.5px;
+        width: 300px;
+        flex-wrap: wrap;
+    }
+    .description h3 {
+        padding-left: 5px;
+    }
+    .description2 {
+        display: flex;
+        background: rgba( 50, 50, 50, 0.50);
+        box-shadow: 0 8px 32px 0 rgba( 65, 65, 65, 0.3 );
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur( 20.0px );
+        border-radius: 20px;
+        border: 5px solid tomato;
+        width: 300px;
+        height: 30%;
+        margin: auto;
+        color: white;
+        font-size: 10pt;
+    }
+    .refresh {
+        visibility: hidden;
+        display: block;
+    }
+    .pokeid {
+        margin-left: 25px;
+        margin-bottom: 30px;
+        position: relative;
+        display: flex;
+    }
+    .logo {
+        position: absolute;
+        top: 10px;
+        width: 60px;
+        right: 185px;
+    }
+    .description h3 {
+        display: flex;
+        margin-left: 2px;
+        color: white;
+        cursor: inherit;
+    }
+}
+.search input {
+    position: relative;
+    margin-top: 30px;
+    width: 245px;
+    height: 27px;
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    color: black;
+}
+.description {
+    background: rgba( 50, 50, 50, 0.50);
+    box-shadow: 0 8px 32px 0 rgba( 65, 65, 65, 0.3 );
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur( 20.0px );
+    border-radius: 20px;
+    border: 5px solid tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    flex-direction: row;
+    margin-left: 8.5px;
+    margin-top: 30px;
+}
+.invisivel {
+    height: 30px;
+    width: 100%;
+}
+.pokeball {
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    left: 65%;
+    top: 17.5%;
+}
+#search {
+    margin-left: 8.5px;
+
+}
+.search input[type=text] {
+    margin-left: 5px;
+    padding-left: 5px;
+    font-style: italic;
+    width: 300px;
+}
+.search input:active {
+    background-color: rgb(218, 218, 218);
+}
+.type {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(40, 200, 80);
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    border: 2px solid white;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:inherit;
+    font-weight: bold;
+    cursor: default;
+}
+
+.description h3 {
+    margin-left: 2px;
+    color: white;
+    cursor: inherit;
+}
+.type1 {
+    width: 100px;
+    height: 40px;
+    background-color: tomato;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    border: 2px solid white;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: default;
+}
+.type2 {
+    width: 100px;
+    height: 40px;
+    background-color: #F85888;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    border: 2px solid white;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: default;
+}
+.refresh {
+    display: block;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 200px;
+    right: 160px;
+    padding-left: 2px;
+    top: 89px;
+    background-color: rgb(255, 100, 70);
+    border: 1px solid white;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+.refresh:hover {
+    background-color: rgb(184, 67, 43);
+}
+.refresh:active {
+    background-color: rgb(139, 57, 34);
+    color: rgb(59, 59, 59);
+}
+.description2 {
+    display: flex;
+    background: rgba( 50, 50, 50, 0.50);
+    box-shadow: 0 8px 32px 0 rgba( 65, 65, 65, 0.3 );
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur( 20.0px );
+    border-radius: 20px;
+    border: 5px solid tomato;
+    width: 95%;
+    margin-left: 8.5px;
+    height: 30%;
+    margin-top: 30px;
+    color: white;
+    font-size: 10pt;
+    margin-bottom: 40px;
+}
+.description2 h2 {
+    display: block;
+    margin: auto;
+    padding-left: 20px;
+    color: white;
+    font-style: italic;
+}
+/* This is a compiled file, you should be editing the file in the templates directory */
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+  
+.pace-inactive {
+    display: none;
+}
+ 
+.pace .pace-progress {
+    background: tomato;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 1.5px;
+}
+  
